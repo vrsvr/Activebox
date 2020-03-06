@@ -82,7 +82,7 @@ p {
   padding-top: 100px;
   height: 750px;
   background: #333751 url("../Activebox/images/intro-bg.jpg") center no-repeat;
-  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .intro__title {
@@ -121,6 +121,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   border-radius: 2px;
   transition: background .1s linear;
 }
@@ -131,6 +132,10 @@ p {
 
 .btn--red:hover {
   background-color: #e03e3e;
+}
+
+.btn--long {
+  min-width: 280px;
 }
 
 /* Fatures */
@@ -266,6 +271,10 @@ p {
   display: flex;
 }
 
+.social--footer {
+  justify-content: center;
+}
+
 .social__item {
   display: flex;
   justify-content: center;
@@ -286,11 +295,26 @@ p {
   fill: #e84545;
 }
 
+.social--footer .social__item {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+  background-color: #fff;
+}
+
 .social__icon {
   display: block;
   height: 18px;
   fill: #c6cacc;
   transition: fill .1s linear;
+}
+
+.social--footer .social__icon {
+  fill: #fff;
 }
 
 /* Reviews */
@@ -339,4 +363,97 @@ p {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+}
+
+/* Download */
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  font-size: 28px;
+  color: #494c4e;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.download__text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  }
+
+/* Footer */
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer_inner {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__block {
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__address {
+  color: #9698ac;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: #9698ac;
+  line-height: 1.5;
+}
+
+/* Copyright */
+
+.copyright {
+  background-color: #313454;
+  padding: 20px 0;
+}
+
+.copyright__text {
+  text-align: center;
+  color: #9698ac;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Media */
+
+@media(max-width: 1230px)  {
+
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 770px) {
+
+}
+
+@media (max-width: 575px) {
+  
 }
