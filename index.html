@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="..\Activebox\main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ActiveBox</title>
@@ -35,14 +36,14 @@
         <div class="header__logo">
           <img src="../Activebox/images/activebox-logo.png" alt="">
         </div>
-        <nav class="nav">
-          <a class="nav__link" href="#">Features</a>
-          <a class="nav__link" href="#">Works</a>
-          <a class="nav__link" href="#">Our Team</a>
-          <a class="nav__link" href="#">Testimonials</a>
-          <a class="nav__link" href="#">Download</a>
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="#" data-scroll="#features">Features</a>
+          <a class="nav__link" href="#" data-scroll="#works">Works</a>
+          <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+          <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
+          <a class="nav__link" href="#" data-scroll="#download">Download</a>
         </nav>
-        <button class="nav-toggle" type="button">
+        <button class="nav-toggle" type="button" id="navToggle">
           <span class="nav-toggle__item">Menu</span>
         </button>
       </div>
@@ -60,7 +61,7 @@
   </div>
 
   <div class="container">
-    <div class="features">
+    <div class="features" id="features">
       <div class="feature__item">
         <img class="features__icon" src="../Activebox/images/features/1.png" alt="">
         <h4 class="features__title">Easily Customised</h4>
@@ -106,7 +107,7 @@
     </div>
   </div>
 
-  <div class="works">
+  <div class="works" id="works">
     <div class="works__item">
       <img class="works__photo" src="../Activebox/images/works/1.jpg" alt="">
       <div class="works__content">
@@ -166,7 +167,7 @@
   </div>
 
   <div class="container">
-    <div class="team">
+    <div class="team" id="team">
       <div class="team__inner">
         <div class="team__item">
           <img class="team__photo" src="../Activebox/images/team/1.jpg" alt="">
@@ -276,25 +277,48 @@
     </div>
   </div>
 
-  <div class="reviews">
+  <div class="reviews" id="reviews">
     <div class="container">
-      <div class="reviews__item">
-        <div class="reviews__photo">
-          <img class="reviews__img" src="../Activebox/images/reviews/1.jpg" alt="">
-        </div>
-        <div class="reviews__content">
-          <div class="reviews__text">
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+      <div class="reviews__slider" id="reviewsSlider">
+
+        <div class="slick-item">
+          <div class="reviews__item">
+            <div class="reviews__photo">
+              <img class="reviews__img" src="../Activebox/images/reviews/1.jpg" alt="">
+            </div>
+            <div class="reviews__content">
+              <div class="reviews__text">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+              </div>
+              <div class="reviews__author">
+                Susan Sims, Interaction Designer at XYZ
+              </div>
+            </div>
           </div>
-          <div class="reviews__author">
-            Susan Sims, Interaction Designer at XYZ
+        </div>
+
+        <div class="slick-item">
+          <div class="reviews__item">
+            <div class="reviews__photo">
+              <img class="reviews__img" src="../Activebox/images/reviews/2.jpg" alt="">
+            </div>
+            <div class="reviews__content">
+              <div class="reviews__text">
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+              </div>
+              <div class="reviews__author">
+                Jack Lewis, Product designer (UX/UI) at XYZ
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 
-  <div class="download">
+
+  <div class="download" id="download">
     <div class="container">
       <div class="download__item">
         <h3 class="download__title">
@@ -360,7 +384,8 @@
     </div>
   </footer>
 
-<script src="../Activebox/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../Activebox/app.js"></script>
 
 </body>
 </html>

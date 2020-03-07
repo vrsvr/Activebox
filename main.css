@@ -44,6 +44,7 @@ p {
   position: fixed;
   background-color: #333751;
   height: auto;
+  transition: .2s linear;
 }
 
 .header.fixed .header__inner {
@@ -449,6 +450,19 @@ p {
   text-transform: uppercase;
 }
 
+.reviews__slider {
+  height: 500px;
+  overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+  height: auto;
+}
+
+.slick-item {
+  outline: none;
+}
+
 /* Download */
 
 .download {
@@ -538,6 +552,21 @@ p {
 
   .nav {
     display: none;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    background-color: #333751;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav__link {
+    padding: 9px 15px;
   }
 
   .nav-toggle {
@@ -661,6 +690,15 @@ p {
 
 @media (max-width: 575px) {
   .reviews__img {
-    right: -120px;
+    right: -225px;
   }
+
+.reviews__author {
+  font-size: 12px;
+}
+
+.reviews__text {
+  font-size: 22px;
+}
+
 }
