@@ -40,6 +40,22 @@ p {
   z-index: 100;
 }
 
+.header.fixed {
+  position: fixed;
+  background-color: #333751;
+  height: auto;
+}
+
+.header.fixed .header__inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0;
+}
+
+.header.fixed .nav-toggle {
+  top: 17px;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
