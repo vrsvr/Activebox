@@ -108,6 +108,10 @@ p {
   outline: none;
 }
 
+.nav-toggle:focus {
+  outline: 0;
+}
+
 .nav-toggle__item {
   width: 30px;
   height: 3px;
